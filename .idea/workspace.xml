@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a53c8f0a-662b-480e-ad62-bd3f261aaaa1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java" afterPath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java" afterPath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java" afterPath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BigTrack.iws" />
@@ -69,31 +70,42 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.ui/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DatabaseController.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="156" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ChangesetListItemModel.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ChangesetListItemModel.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="5" selection-start="129" selection-end="129" vertical-scroll-proportion="0.19859813" vertical-offset="0" max-vertical-offset="856">
+                <state line="17" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TableChnage.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="10" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ColumnChange.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/ColumnChange.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="10" column="31" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="OperationType.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/OperationType.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="5" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -109,19 +121,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ChnagesetsRequest.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="ChnagesetsRequest.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="24" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PagedRequest.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/PagedRequest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+                <state line="6" column="22" selection-start="114" selection-end="114" vertical-scroll-proportion="0.11915888" vertical-offset="0" max-vertical-offset="856">
                   <folding />
                 </state>
               </provider>
@@ -201,8 +204,11 @@
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/DatabaseTableListItemModel.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetDetailsResponse.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" />
-        <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/OperationType.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/ColumnChange.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java" />
       </list>
     </option>
   </component>
@@ -296,6 +302,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BigTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BigTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.bigtrack.business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BigTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BigTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.bigtrack.business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -701,7 +759,7 @@
       <created>1464564676617</created>
       <updated>1464564676617</updated>
       <workItem from="1464564679184" duration="1796000" />
-      <workItem from="1464590405147" duration="1050000" />
+      <workItem from="1464590405147" duration="1864000" />
     </task>
     <task id="LOCAL-00001" summary="apis module configured">
       <created>1464567442755</created>
@@ -711,18 +769,26 @@
       <created>1464591538940</created>
       <updated>1464591538940</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Models elaborated&#10;">
+      <created>1464591567984</created>
+      <updated>1464591567984</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Domain created">
+      <created>1464592215247</created>
+      <updated>1464592215247</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2846000" />
+    <option name="totallyTimeSpent" value="3660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -732,10 +798,10 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -765,7 +831,9 @@
     </option>
     <MESSAGE value="apis module configured" />
     <MESSAGE value="Models elaborated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Models elaborated" />
+    <MESSAGE value="Models elaborated&#10;" />
+    <MESSAGE value="Domain created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Domain created" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -910,19 +978,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java">
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+        <state line="17" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/OperationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java">
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/ColumnChange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="129" selection-end="129" vertical-scroll-proportion="0.19859813" vertical-offset="0" max-vertical-offset="856">
+        <state line="10" column="31" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="114" selection-end="114" vertical-scroll-proportion="0.11915888" vertical-offset="0" max-vertical-offset="856">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,10 +1023,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>org.bigtrack.apis:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -943,7 +1036,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -978,7 +1071,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>org.bigtrack.apis</last-edited>
+          <last-edited>org.bigtrack.business</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -991,6 +1084,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: asm:asm:3.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

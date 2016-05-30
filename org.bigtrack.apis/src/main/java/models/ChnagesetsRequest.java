@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.ws.rs.QueryParam;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Alex on 5/29/16.
