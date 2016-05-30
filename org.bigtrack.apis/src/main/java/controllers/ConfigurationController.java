@@ -1,6 +1,6 @@
 package controllers;
 
-import models.ConfigurationResponse;
+import models.DatabaseConfigurationListItemModel;
 
 import javax.ws.rs.Path;
 
@@ -11,7 +11,7 @@ import javax.ws.rs.Path;
 public class ConfigurationController {
 
     @Path("/")
-    public ConfigurationResponse GetConfiguration (){
+    public DatabaseConfigurationListItemModel GetConfiguration (){
         throw new RuntimeException("Not implemented");
     }
 }

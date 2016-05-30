@@ -21,5 +21,5 @@ public class ChnagesetsRequest extends PagedRequest {
     private String user;
 
     @QueryParam("columns")
-    private String columns;
+    private List<String> columns;
 }

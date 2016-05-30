@@ -1,7 +1,0 @@
-package models;
-
-/**
- * Created by Alex on 5/29/16.
- */
-public class DatabaseListItemModel {
-}

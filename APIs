@@ -1,0 +1,11 @@
+Configuration
+    DBs,
+        type of catalog (database/index/...),
+        type (SQL Server, mongoDb...)
+        supports User who did the change ?
+
+Database/id/Tables
+Database/id/tables/id/Columns
+Database/id/tables/id/ChangeSets?offset=0&count=10&from=(date)&to=(date)&columns=a,b,c&user=123 (userId if supoprted, date, columns, operation)
+Database/id/tables/id/ChangeSets/ID (RowBefore and RowAfter)
+
