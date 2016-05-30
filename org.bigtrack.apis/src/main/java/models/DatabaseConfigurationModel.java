@@ -6,7 +6,7 @@ import lombok.Data;
  * Created by Alex on 5/29/16.
  */
 @Data
-public class DatabaseConfigurationListItemModel{
+public class DatabaseConfigurationModel {
     private int id;
     private String name;
     private String catalogTypeName;

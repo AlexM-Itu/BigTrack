@@ -2,6 +2,7 @@ package Configuration;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -9,5 +10,5 @@ import java.util.List;
  */
 @Data
 public class BigTrackConfiguration {
-    private List<DatabaseConfiguration> databaseConfigurations;
+    private List<DatabaseConfiguration> databaseConfigurations = new ArrayList<DatabaseConfiguration>();
 }
