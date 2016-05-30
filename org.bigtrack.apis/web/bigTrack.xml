@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<bigTrackConfig>
+    <trackableDatabases>
+        <database>
+            <name>MyDb</name>
+            <connectionString>aasdjshfjh</connectionString>
+            <dialectDriver>org.bigtrack.sqlserver.sqlDriver</dialectDriver>
+        </database>
+        <database>
+            <name>MyDb1</name>
+            <connectionString>dsfgsdfgsd</connectionString>
+            <dialectDriver>org.bigtrack.mysql.mySqlDriver</dialectDriver>
+        </database>
+        <database>
+            <name>MyDb3</name>
+            <connectionString>dsfgsdfgsd</connectionString>
+            <dialectDriver>org.bigtrack.mongoDb.MongoDbDriver</dialectDriver>
+        </database>
+    </trackableDatabases>
+</bigTrackConfig>
