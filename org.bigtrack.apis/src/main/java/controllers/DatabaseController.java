@@ -29,6 +29,7 @@ public class DatabaseController {
                 .getDatabaseConfigurations()
                 .stream()
                 .filter(conf-> conf.getId() == databaseId)
+                .map(conf-> conf.getDialectDriver().getDatabaseManager())
                 .findFirst()
                 .get();
 
@@ -36,14 +37,15 @@ public class DatabaseController {
 
         List<Table> tables = databaseManager.getDatabaseTables ();
 
-        return new Collectors.toList(tables
+        return new tables
                 .stream()
                 .map(table -> {
                     DatabaseTableListItemModel model = new DatabaseTableListItemModel();
                     model.setId(table.getId());
                     model.setName(table.getName());
                     return model;
-                }));
+                })
+                .collect(Collectors.toList());
     }
 
     @Path("/{databaseId}/tables/{tableId}/columns")
