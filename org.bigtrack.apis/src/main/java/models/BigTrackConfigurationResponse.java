@@ -9,6 +9,5 @@ import java.util.List;
  */
 @Data
 public class BigTrackConfigurationResponse {
-    private String sessionId;
     private List<DatabaseConfigurationModel> databaseConfigurations;
 }

@@ -9,6 +9,7 @@ import lombok.Data;
 public class DatabaseConfigurationModel {
     private int id;
     private String name;
+    private String databaseTypeName;
     private String catalogTypeName;
     private boolean isUserTrackingSupported;
 }
