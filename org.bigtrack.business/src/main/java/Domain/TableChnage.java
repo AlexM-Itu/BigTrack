@@ -11,11 +11,12 @@ import java.util.List;
 @Data
 public class TableChnage {
     private long id;
-    private String tableName;
+    private int tableId;
     private int operationTypeId;
     private Date timestamp;
     private String user;
     private byte oprationTypeId;
     private OperationType operationType;
     private List<ColumnChange> columnChanges;
+    private Table table;
 }

@@ -1,5 +1,6 @@
 package Configuration;
 
+import Database.DialectDriver;
 import lombok.Data;
 
 /**
