@@ -25,17 +25,11 @@ public class DatabaseController {
     @Path("/{databaseId}/tables")
     @WebMethod(operationName = "GET")
     public List<DatabaseTableListItemModel> GetTablesList(@PathParam("databaseId") String databaseId){
-        DatabaseManager databaseManager = configurationManager
-                .getDatabaseConfigurations()
-                .stream()
-                .filter(conf-> conf.getId() == databaseId)
-                .map(conf-> conf.getDialectDriver().getDatabaseManager())
-                .findFirst()
-                .get();
+
 
         // todo error if not found
 
-        List<Table> tables = databaseManager.getDatabaseTables ();
+        List<Table> tables = configurationManager.getDatabaseManagerByDatabaseId(databaseId).getDatabaseTables();
 
 //        return new tables
 //                .stream()
