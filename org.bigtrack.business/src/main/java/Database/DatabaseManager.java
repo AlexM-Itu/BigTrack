@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface DatabaseManager {
     List<Table> getDatabaseTables();
+    List<String> getTableColumns(int tableId);
 }

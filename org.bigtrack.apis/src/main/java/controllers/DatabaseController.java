@@ -26,10 +26,10 @@ public class DatabaseController {
     @WebMethod(operationName = "GET")
     public List<DatabaseTableListItemModel> GetTablesList(@PathParam("databaseId") String databaseId){
 
-
+        DatabaseManager databaseManager = configurationManager.getDatabaseManagerByDatabaseId(databaseId);
         // todo error if not found
 
-        List<Table> tables = configurationManager.getDatabaseManagerByDatabaseId(databaseId).getDatabaseTables();
+        List<Table> tables = databaseManager.getDatabaseTables();
 
 //        return new tables
 //                .stream()
@@ -47,7 +47,10 @@ public class DatabaseController {
     @Path("/{databaseId}/tables/{tableId}/columns")
     @WebMethod(operationName = "GET")
     public List<String> GetTableColumns(@PathParam("databaseId") String databaseId, @PathParam("tableId") int tableId){
-        throw new RuntimeException("Not implemented");
+        DatabaseManager databaseManager = configurationManager.getDatabaseManagerByDatabaseId(databaseId);
+        // todo error if not found
+
+        return databaseManager.getTableColumns(tableId);
     }
 
     @Path("/{databaseId}/tables/{tableId}/changesets")

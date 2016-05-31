@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a53c8f0a-662b-480e-ad62-bd3f261aaaa1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Configuration/ConfigurationManager.java" afterPath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Configuration/ConfigurationManager.java" />
+    <list default="true" id="a53c8f0a-662b-480e-ad62-bd3f261aaaa1" name="Default" comment="refactoring&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" afterPath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" afterPath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BigTrack.iws" />
@@ -93,7 +93,7 @@
           <file leaf-file-name="DatabaseController.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="112" selection-start="917" selection-end="917" vertical-scroll-proportion="0.35892856" vertical-offset="326" max-vertical-offset="1190">
+                <state line="48" column="39" selection-start="1546" selection-end="1561" vertical-scroll-proportion="0.5081019" vertical-offset="377" max-vertical-offset="1241">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -151,7 +151,7 @@
           <file leaf-file-name="DatabaseManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="4" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+                <state line="11" column="17" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -184,7 +184,7 @@
           <file leaf-file-name="bigTrack.xml" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/web/bigTrack.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="17" selection-start="826" selection-end="826" vertical-scroll-proportion="0.6729776" vertical-offset="0" max-vertical-offset="581">
+                <state line="23" column="17" selection-start="826" selection-end="826" vertical-scroll-proportion="0.4418079" vertical-offset="0" max-vertical-offset="885">
                   <folding />
                 </state>
               </provider>
@@ -228,10 +228,10 @@
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Abstract/DialectDriver.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/Table.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java" />
-        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/DatabaseConfigurationModel.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Configuration/ConfigurationManager.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
       </list>
     </option>
   </component>
@@ -863,7 +863,7 @@
       <updated>1464564676617</updated>
       <workItem from="1464564679184" duration="1796000" />
       <workItem from="1464590405147" duration="5656000" />
-      <workItem from="1464668669011" duration="4467000" />
+      <workItem from="1464668669011" duration="4768000" />
     </task>
     <task id="LOCAL-00001" summary="apis module configured">
       <created>1464567442755</created>
@@ -921,11 +921,15 @@
       <created>1464679310467</created>
       <updated>1464679310467</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactoring">
+      <created>1464679674649</created>
+      <updated>1464679674649</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11919000" />
+    <option name="totallyTimeSpent" value="12220000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -965,7 +969,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1007,7 +1011,8 @@
     <MESSAGE value="Some complie errors fixed" />
     <MESSAGE value="More complie errors fixed" />
     <MESSAGE value="Another compile error temporary commented out" />
-    <option name="LAST_COMMIT_MESSAGE" value="Another compile error temporary commented out" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1313,7 +1318,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/web/bigTrack.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="826" selection-end="826" vertical-scroll-proportion="0.6729776" vertical-offset="0" max-vertical-offset="581">
+        <state line="23" column="17" selection-start="826" selection-end="826" vertical-scroll-proportion="0.4418079" vertical-offset="0" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
@@ -1328,15 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Configuration/ConfigurationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="39" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
@@ -1346,9 +1342,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="112" selection-start="917" selection-end="917" vertical-scroll-proportion="0.35892856" vertical-offset="326" max-vertical-offset="1190">
+        <state line="48" column="39" selection-start="1546" selection-end="1561" vertical-scroll-proportion="0.5081019" vertical-offset="377" max-vertical-offset="1241">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
