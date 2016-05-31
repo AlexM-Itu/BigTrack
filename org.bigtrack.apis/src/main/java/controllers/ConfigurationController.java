@@ -6,6 +6,7 @@ import Configuration.DatabaseConfiguration;
 import models.BigTrackConfigurationResponse;
 import models.DatabaseConfigurationModel;
 
+import javax.jws.WebMethod;
 import javax.ws.rs.Path;
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class ConfigurationController {
     private ConfigurationManager configurationManager = ConfigurationManager.getInstance();
 
     @Path("/")
+    @WebMethod(operationName = "GET")
     public BigTrackConfigurationResponse GetConfiguration (){
         BigTrackConfigurationResponse response = new BigTrackConfigurationResponse();
 
@@ -25,7 +27,7 @@ public class ConfigurationController {
         for(DatabaseConfiguration databaseConfiguration : databaseConfigurations){
             DatabaseConfigurationModel databaseConfigurationModel = new DatabaseConfigurationModel();
             databaseConfigurationModel.setId (databaseConfiguration.getId());
-            databaseConfigurationModel.setName (databaseConfiguration.getName());
+            databaseConfigurationModel.setName(databaseConfiguration.getName());
             databaseConfigurationModel.setDatabaseTypeName(databaseConfiguration.getDialectDriver().getDatabaseTypeName());
             databaseConfigurationModel.setCatalogTypeName(databaseConfiguration.getDialectDriver().getCatalogTypeName());
             databaseConfigurationModel.setUserTrackingSupported(databaseConfiguration.getDialectDriver().getUserTrackingSupported());
