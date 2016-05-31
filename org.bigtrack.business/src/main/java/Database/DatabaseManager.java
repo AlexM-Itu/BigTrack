@@ -1,6 +1,8 @@
 package Database;
 
 import Domain.Table;
+import Domain.TableChange;
+
 
 import java.util.List;
 
@@ -10,4 +12,5 @@ import java.util.List;
 public interface DatabaseManager {
     List<Table> getDatabaseTables();
     List<String> getTableColumns(int tableId);
+    List<TableChange> findChangesets(int tableId, ChangesetSearchOptions searchOptions);
 }

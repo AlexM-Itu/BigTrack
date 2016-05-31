@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a53c8f0a-662b-480e-ad62-bd3f261aaaa1" name="Default" comment="refactoring&#10;">
+    <list default="true" id="a53c8f0a-662b-480e-ad62-bd3f261aaaa1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/ChangesetSearchOptions.java" />
+      <change type="MOVED" beforePath="C:\Projects\Java\BigTrack\org.bigtrack.business\src\main\java\Domain\TableChnage.java" afterPath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChange.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" afterPath="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" afterPath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -67,9 +69,20 @@
     <favorites_list name="BigTrack" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.623137">
+    <splitter split-orientation="horizontal" split-proportion="0.7402413">
       <split-first>
         <leaf>
+          <file leaf-file-name="DatabaseController.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="89" column="46" selection-start="3587" selection-end="3587" vertical-scroll-proportion="0.7048611" vertical-offset="904" max-vertical-offset="1768">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="WebMethod.class" pinned="false" current="false" current-in-tab="false">
             <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/jre/lib/rt.jar!/javax/jws/WebMethod.class">
               <provider selected="true" editor-type-id="text-editor">
@@ -90,32 +103,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DatabaseController.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java">
+          <file leaf-file-name="ChnagesetsRequest.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="39" selection-start="1546" selection-end="1561" vertical-scroll-proportion="0.5081019" vertical-offset="377" max-vertical-offset="1241">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ConfigurationManager.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Configuration/ConfigurationManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="39" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="19" selection-start="850" selection-end="850" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
+                <state line="12" column="13" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
                   <folding />
                 </state>
               </provider>
@@ -151,7 +142,7 @@
           <file leaf-file-name="DatabaseManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="17" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+                <state line="14" column="20" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -159,10 +150,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DatabaseConfigurationModel.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/DatabaseConfigurationModel.java">
+          <file leaf-file-name="ChangesetSearchOptions.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/ChangesetSearchOptions.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="18" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+                <state line="11" column="35" selection-start="145" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PagedRequest.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/PagedRequest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="28" selection-start="147" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
                   <folding />
                 </state>
               </provider>
@@ -227,11 +229,14 @@
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Configuration/DatabaseConfiguration.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Abstract/DialectDriver.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/Table.java" />
-        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/DatabaseConfigurationModel.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Configuration/ConfigurationManager.java" />
-        <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/ChangesetSearchOptions.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChanage.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChange.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" />
       </list>
     </option>
   </component>
@@ -863,7 +868,7 @@
       <updated>1464564676617</updated>
       <workItem from="1464564679184" duration="1796000" />
       <workItem from="1464590405147" duration="5656000" />
-      <workItem from="1464668669011" duration="4768000" />
+      <workItem from="1464668669011" duration="6577000" />
     </task>
     <task id="LOCAL-00001" summary="apis module configured">
       <created>1464567442755</created>
@@ -925,11 +930,15 @@
       <created>1464679674649</created>
       <updated>1464679674649</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="GetTableColumns implemented">
+      <created>1464679980771</created>
+      <updated>1464679980771</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12220000" />
+    <option name="totallyTimeSpent" value="14029000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1012,7 +1021,8 @@
     <MESSAGE value="More complie errors fixed" />
     <MESSAGE value="Another compile error temporary commented out" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="GetTableColumns implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="GetTableColumns implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1029,7 +1039,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java">
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChange.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="459">
           <folding />
@@ -1190,13 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/PagedRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/OperationType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="5" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
@@ -1211,23 +1214,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/util/UUID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="140" column="23" selection-start="4052" selection-end="4052" vertical-scroll-proportion="0.33333334" vertical-offset="1805" max-vertical-offset="7191" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/BigTrackConfigurationResponse.java">
@@ -1263,20 +1252,6 @@
     <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DialectDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="26" selection-start="231" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/ColumnChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChnage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
@@ -1342,18 +1317,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/PagedRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="15" column="28" selection-start="147" selection-end="253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/ChangesetSearchOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="145" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChnagesetsRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/ColumnChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="31" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="129" selection-end="129" vertical-scroll-proportion="0.20767888" vertical-offset="0" max-vertical-offset="573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/models/ChangesetListItemModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.23734729" vertical-offset="0" max-vertical-offset="573">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="39" selection-start="1546" selection-end="1561" vertical-scroll-proportion="0.5081019" vertical-offset="377" max-vertical-offset="1241">
+        <state line="89" column="46" selection-start="3587" selection-end="3587" vertical-scroll-proportion="0.7048611" vertical-offset="904" max-vertical-offset="1768">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

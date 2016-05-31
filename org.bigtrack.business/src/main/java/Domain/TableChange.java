@@ -9,7 +9,7 @@ import java.util.List;
  * Created by Alex on 5/30/16.
  */
 @Data
-public class TableChnage {
+public class TableChange {
     private long id;
     private int tableId;
     private int operationTypeId;
