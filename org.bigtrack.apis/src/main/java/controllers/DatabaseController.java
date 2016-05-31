@@ -37,15 +37,17 @@ public class DatabaseController {
 
         List<Table> tables = databaseManager.getDatabaseTables ();
 
-        return new tables
-                .stream()
-                .map(table -> {
-                    DatabaseTableListItemModel model = new DatabaseTableListItemModel();
-                    model.setId(table.getId());
-                    model.setName(table.getName());
-                    return model;
-                })
-                .collect(Collectors.toList());
+//        return new tables
+//                .stream()
+//                .map(table -> {
+//                    DatabaseTableListItemModel model = new DatabaseTableListItemModel();
+//                    model.setId(table.getId());
+//                    model.setName(table.getName());
+//                    return model;
+//                })
+//                .collect(Collectors.toList());
+
+        throw new RuntimeException("Not implemented");
     }
 
     @Path("/{databaseId}/tables/{tableId}/columns")
