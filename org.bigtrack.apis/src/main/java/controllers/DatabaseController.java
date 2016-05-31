@@ -12,6 +12,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by Alex on 5/29/16.
@@ -26,8 +27,8 @@ public class DatabaseController {
     public List<DatabaseTableListItemModel> GetTablesList(@PathParam("databaseId") String databaseId){
         DatabaseManager databaseManager = configurationManager
                 .getDatabaseConfigurations()
-                .streams()
-                .filer(conf-> conf.getId() == databaseId)
+                .stream()
+                .filter(conf-> conf.getId() == databaseId)
                 .findFirst()
                 .get();
 
@@ -35,15 +36,14 @@ public class DatabaseController {
 
         List<Table> tables = databaseManager.getDatabaseTables ();
 
-        return new ArrayList<DatabaseTableListItemModel>(tables
+        return new Collectors.toList(tables
                 .stream()
                 .map(table -> {
                     DatabaseTableListItemModel model = new DatabaseTableListItemModel();
                     model.setId(table.getId());
                     model.setName(table.getName());
                     return model;
-                })
-                .toArray());
+                }));
     }
 
     @Path("/{databaseId}/tables/{tableId}/columns")

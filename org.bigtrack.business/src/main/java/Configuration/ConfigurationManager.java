@@ -3,6 +3,7 @@ package Configuration;
 import lombok.Getter;
 import java.lang.String;
 import java.util.UUID;
+import java.util.List;
 
 /**
  * Created by Alex on 5/30/16.
@@ -19,7 +20,7 @@ public class ConfigurationManager {
         // todo load conf. from XML and initialize dialect drivers
     }
 
-    private List<DatabaseConfiguration> getDatabaseConfigurations(){
+    public List<DatabaseConfiguration> getDatabaseConfigurations(){
         return bigTrackConfiguration.getDatabaseConfigurations();
     }
 }

@@ -7,7 +7,7 @@ import lombok.Data;
  */
 @Data
 public class DatabaseConfigurationModel {
-    private int id;
+    private String id;
     private String name;
     private String databaseTypeName;
     private String catalogTypeName;
