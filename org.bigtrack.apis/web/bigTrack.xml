@@ -3,17 +3,20 @@
 <bigTrackConfig>
     <trackableDatabases>
         <database>
-            <name>MyDb</name>
+            <id>myDb1</id>
+            <name>My Db</name>
             <connectionString>aasdjshfjh</connectionString>
             <dialectDriver>org.bigtrack.sqlserver.sqlDriver</dialectDriver>
         </database>
         <database>
-            <name>MyDb1</name>
+            <id>myDb2</id>
+            <name>My Db1</name>
             <connectionString>dsfgsdfgsd</connectionString>
             <dialectDriver>org.bigtrack.mysql.mySqlDriver</dialectDriver>
         </database>
         <database>
-            <name>MyDb3</name>
+            <id>myDb3</id>
+            <name>My Db3</name>
             <connectionString>dsfgsdfgsd</connectionString>
             <dialectDriver>org.bigtrack.mongoDb.MongoDbDriver</dialectDriver>
         </database>

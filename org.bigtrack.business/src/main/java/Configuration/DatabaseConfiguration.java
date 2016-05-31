@@ -7,6 +7,7 @@ import lombok.Data;
  */
 @Data
 public class DatabaseConfiguration {
+    private String id;
     private String name;
     private String connectionString;
     private String dialectDriverName;

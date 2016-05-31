@@ -11,9 +11,6 @@ public class ConfigurationManager {
     private static ConfigurationManager ourInstance = new ConfigurationManager();
     private BigTrackConfiguration bigTrackConfiguration;
 
-    @Getter
-    private UUID sessionId = UUID.randomUUID();
-
     public static ConfigurationManager getInstance() {
         return ourInstance;
     }

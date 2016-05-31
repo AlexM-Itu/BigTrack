@@ -6,6 +6,7 @@ import Configuration.DatabaseConfiguration;
 import models.DatabaseConfigurationModel;
 
 import javax.ws.rs.Path;
+import java.util.List;
 
 /**
  * Created by Alex on 5/29/16.
@@ -17,16 +18,15 @@ public class ConfigurationController {
 
     @Path("/")
     public BigTrackConfiguration GetConfiguration (){
-        BigTrackConfiguration configuration = new BigTrackConfiguration;
-        configuration.setSessionId(configurationManager.getSessionId());
+        BigTrackConfiguration configuration = new BigTrackConfiguration();
 
         List<DatabaseConfiguration> databaseConfigurations = configurationManager.getDatabaseConfigurations();
-        for(int = 0; i< databaseConfigurations.size(); i++){
+        for(DatabaseConfiguration databaseConfiguration : databaseConfigurations){
             DatabaseConfigurationModel databaseConfigurationModel = new DatabaseConfigurationModel();
-            databaseConfigurationModel.setId (i);
-            databaseConfigurationModel.setName (databaseConfigurations.Get(i).getName());
-            databaseConfigurationModel.setCatalogTypeName(databaseConfigurations.Get(i).getDialectDriver().getCatalogTypeName());
-            databaseConfigurationModel.setUserTrackingSupported(databaseConfigurations.Get(i).getDialectDriver().getUserTrackingSupported());
+            databaseConfigurationModel.setId (databaseConfiguration.getId());
+            databaseConfigurationModel.setName (databaseConfiguration.getName());
+            databaseConfigurationModel.setCatalogTypeName(databaseConfiguration.getDialectDriver().getCatalogTypeName());
+            databaseConfigurationModel.setUserTrackingSupported(databaseConfiguration.getDialectDriver().getUserTrackingSupported());
 
             configuration.getDatabaseConfigurations().add(databaseConfigurationModel);
         }
