@@ -1,8 +1,9 @@
 Configuration
-    DBs,
+    (DBs,
+        Id
         type of catalog (database/index/...),
         type (SQL Server, mongoDb...)
-        supports User who did the change ?
+        supports User who did the change ?)
 
 Database/id/Tables
 Database/id/tables/id/Columns

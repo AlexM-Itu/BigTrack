@@ -93,6 +93,30 @@ public class DatabaseController {
     @Path("/{databaseId}/tables/{tableId}/{changesetId}")
     @WebMethod(operationName = "GET")
     public ChangesetDetailsResponse GetChangesetDetails (@PathParam("databaseId") String databaseId, @PathParam("tableId") int tableId, @PathParam("changesetId") int changesetId){
-        throw new RuntimeException("Not implemented");
+
+        DatabaseManager databaseManager = configurationManager.getDatabaseManagerByDatabaseId(databaseId);
+        // todo error if not found
+
+        TableChange changeset = databaseManager.getChangesetDetails(changesetId); // todo db id is never used
+
+        ChangesetDetailsResponse response = new ChangesetDetailsResponse();
+        response.setOperation(changeset.getOperationType().getName());
+        response.setTimestamp(changeset.getTimestamp());
+
+        if (changeset.getTimestamp().equals("Insert")){ // todo change with enum usage
+            response.setPriorValues(changeset
+                .getColumnChanges()
+                .stream()
+                .collect(Collectors.toMap(ch -> ch.getColumnName(), ch -> ch.getPriorValue())));
+        }
+
+        if (changeset.getTimestamp().equals("Delete")){ // todo change with enum usage
+            response.setUpdatedValues(changeset
+                .getColumnChanges()
+                .stream()
+                .collect(Collectors.toMap(ch-> ch.getColumnName(), ch-> ch.getUpdatedValue())));
+        }
+
+        return response;
     }
 }
