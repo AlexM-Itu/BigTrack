@@ -10,7 +10,7 @@ import java.util.List;
  * Created by Alex on 5/30/16.
  */
 public interface DatabaseManager {
-    public void SetConnectionString(String connectionString);
+    public void setConnectionString(String connectionString);
     public List<Table> getDatabaseTables();
     public List<String> getTableColumns(int tableId);
     public List<TableChange> findChangesets(int tableId, ChangesetSearchOptions searchOptions);
