@@ -7,6 +7,6 @@ import lombok.Data;
  */
 @Data
 public class Table {
-    private int id;
-    private Operations name;
+    private String id;
+    private String name;
 }

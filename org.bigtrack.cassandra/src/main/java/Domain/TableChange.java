@@ -7,11 +7,13 @@ import com.datastax.driver.mapping.annotations.Column;
 import com.datastax.driver.mapping.annotations.Frozen;
 import com.datastax.driver.mapping.annotations.PartitionKey;
 import com.datastax.driver.mapping.annotations.Table;
+import lombok.Data;
 
 /**
  * Created by Alex on 6/11/16.
  */
 @Table (keyspace = "todo", name="tableChanges")
+@Data
 public class TableChange {
     @PartitionKey
     private UUID id;
