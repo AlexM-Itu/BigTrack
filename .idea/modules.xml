@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/BigTrack.iml" filepath="$PROJECT_DIR$/BigTrack.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.bigtrack.apis/org.bigtrack.apis.iml" filepath="$PROJECT_DIR$/org.bigtrack.apis/org.bigtrack.apis.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.bigtrack.business/org.bigtrack.business.iml" filepath="$PROJECT_DIR$/org.bigtrack.business/org.bigtrack.business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.bigtrack.cassandra/org.bigtrack.cassandra.iml" filepath="$PROJECT_DIR$/org.bigtrack.cassandra/org.bigtrack.cassandra.iml" />
       <module fileurl="file://$PROJECT_DIR$/org.bigtrack.ui/org.bigtrack.ui.iml" filepath="$PROJECT_DIR$/org.bigtrack.ui/org.bigtrack.ui.iml" />
     </modules>
   </component>

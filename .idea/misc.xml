@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/org.bigtrack.apis/pom.xml" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/pom.xml" />
         <option value="$PROJECT_DIR$/org.bigtrack.ui/pom.xml" />
+        <option value="$PROJECT_DIR$/org.bigtrack.cassandra/pom.xml" />
       </list>
     </option>
   </component>

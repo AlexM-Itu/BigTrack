@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="org.bigtrack.apis" />
         <module name="org.bigtrack.business" />
+        <module name="org.bigtrack.cassandra" />
         <module name="org.bigtrack.ui" />
       </profile>
     </annotationProcessing>
