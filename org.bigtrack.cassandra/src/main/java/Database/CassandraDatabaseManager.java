@@ -10,6 +10,8 @@ import com.datastax.driver.mapping.Mapper;
 import com.datastax.driver.mapping.MappingManager;
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Row;
+import com.datastax.driver.mapping.Result;
+import java.util.stream.Collectors;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,23 +30,40 @@ public class CassandraDatabaseManager implements DatabaseManager {
 
     @Override
     public List<Table> getDatabaseTables() {
-       Session session = cluster.connect();
-       List<Table> result = new ArrayList<Table>();
+       try(Session session = cluster.connect()){
+           List<Table> result = new ArrayList<Table>();
 
-       ResultSet rows = session.execute("SELECT name FROM TableNames");
-       for (Row row : rows){
-           Table table = new Table();
-           table.setId(row.getString("name"));
-           table.setName(table.getId());
-           result.add(table);
+           ResultSet rows = session.execute("SELECT name FROM TableNames");
+           for (Row row : rows){ // todo convert to stream
+               Table table = new Table();
+               table.setId(row.getString("name"));
+               table.setName(table.getId());
+               result.add(table);
+           }
+
+           return result;
        }
-
-       return result;
     }
 
     @Override
     public List<String> getTableColumns(int tableId) {
-        return null;
+
+        try(Session session = cluster.connect()){
+            ResultSet rows = session.execute("select  * from TableChanges where tableName = "+ tableId + "limit 1;");
+
+            Mapper<TableChange> mapper = getMapper(session);
+            Result<TableChange> latestChange = mapper.map(rows);
+
+            if (latestChange.one() == null)
+                return null;
+
+            return latestChange
+                    .one()
+                    .getColumnChanges()
+                    .stream()
+                    .map(ch-> ch.getColumnsName())
+                    .collect (Collectors.toList());
+        }
     }
 
     @Override
