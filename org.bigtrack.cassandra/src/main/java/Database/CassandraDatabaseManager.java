@@ -46,7 +46,7 @@ public class CassandraDatabaseManager implements DatabaseManager {
     }
 
     @Override
-    public List<String> getTableColumns(int tableId) {
+    public List<String> getTableColumns(String tableId) {
 
         try(Session session = cluster.connect()){
             ResultSet rows = session.execute("select  * from TableChanges where tableName = "+ tableId + "limit 1;");
@@ -72,12 +72,23 @@ public class CassandraDatabaseManager implements DatabaseManager {
     }
 
     @Override
-    public TableChange getChangesetDetails(long changesetId) {
-        return null;
+    public TableChange getChangesetDetails(String changesetId) {
+        try(Session session = cluster.connect()){
+            Mapper<TableChange> mapper = getMapper(session);
+            Result<TableChange> result = mapper.get(changesetId);
+            if (result.one() == null)
+                return null;
+
+            return MapCassandraTableChangeToBusinessTableChange(result.one());
+        }
     }
 
     private Mapper<TableChange> getMapper (Session session){
         Mapper<TableChange> tableChangeMapper = new MappingManager(session).mapper(TableChange.class);
         return tableChangeMapper;
+    }
+
+    private TableChange MapCassandraTableChangeToBusinessTableChange (TableChange cassandraTableChange){
+        throw new Exception("not implemented");
     }
 }

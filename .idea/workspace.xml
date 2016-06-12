@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a53c8f0a-662b-480e-ad62-bd3f261aaaa1" name="Default" comment="">
+    <list default="true" id="a53c8f0a-662b-480e-ad62-bd3f261aaaa1" name="Default" comment="getTableColumns implemented&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Database/CassandraDatabaseManager.java" afterPath="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Database/CassandraDatabaseManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.cassandra/org.bigtrack.cassandra.iml" afterPath="$PROJECT_DIR$/org.bigtrack.cassandra/org.bigtrack.cassandra.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" afterPath="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/TableChange.java" afterPath="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/TableChange.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BigTrack.iws" />
@@ -73,7 +74,7 @@
           <file leaf-file-name="CassandraDatabaseManager.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Database/CassandraDatabaseManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="31" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.41847205" vertical-offset="636" max-vertical-offset="1513">
+                <state line="74" column="42" selection-start="2263" selection-end="2282" vertical-scroll-proportion="0.22862129" vertical-offset="1127" max-vertical-offset="1700">
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1020#1027#0" expanded="true" />
@@ -116,7 +117,7 @@
           <file leaf-file-name="TableChange.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/TableChange.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+                <state line="16" column="13" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -128,6 +129,15 @@
             <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/Table.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="9" column="18" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DatabaseManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="17" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
                   <folding />
                 </state>
               </provider>
@@ -155,15 +165,6 @@
             <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/TableChange.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="11" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ColumnChange.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/ColumnChange.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="16" selection-start="123" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
                   <folding />
                 </state>
               </provider>
@@ -203,7 +204,7 @@
           <file leaf-file-name="DialectDriver.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DialectDriver.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="30" selection-start="75" selection-end="88" vertical-scroll-proportion="0.096921325" vertical-offset="0" max-vertical-offset="877">
+                <state line="5" column="30" selection-start="75" selection-end="88" vertical-scroll-proportion="0.14834206" vertical-offset="0" max-vertical-offset="573">
                   <folding />
                 </state>
               </provider>
@@ -255,16 +256,16 @@
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/ChangesetDetail.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.apis/src/main/java/controllers/DatabaseController.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Configuration/CassandraDialectDriver.java" />
-        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/ColumnChage.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/Operations.java" />
-        <option value="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/TableChange.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/ColumnChange.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/MapperConfiguration.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/MapperConfiguration.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.cassandra/pom.xml" />
         <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Domain/Table.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java" />
         <option value="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Database/CassandraDatabaseManager.java" />
+        <option value="$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/TableChange.java" />
       </list>
     </option>
   </component>
@@ -340,6 +341,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="org.bigtrack.ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BigTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BigTrack" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.bigtrack.ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -921,7 +940,7 @@
       <workItem from="1464938239464" duration="2282000" />
       <workItem from="1465344409467" duration="2046000" />
       <workItem from="1465631009252" duration="1195000" />
-      <workItem from="1465679452481" duration="9595000" />
+      <workItem from="1465679452481" duration="10741000" />
     </task>
     <task id="LOCAL-00001" summary="apis module configured">
       <created>1464567442755</created>
@@ -1007,11 +1026,15 @@
       <created>1465688425602</created>
       <updated>1465688425602</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="getTableColumns implemented">
+      <created>1465690050918</created>
+      <updated>1465690050918</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30134000" />
+    <option name="totallyTimeSpent" value="31280000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1051,7 +1074,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1100,7 +1123,8 @@
     <MESSAGE value="Cassandra module created and CassandraDialectDriver implemented" />
     <MESSAGE value="Cassandra domain implemented" />
     <MESSAGE value="getDatabaseTables implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="getDatabaseTables implemented" />
+    <MESSAGE value="getTableColumns implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="getTableColumns implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1352,7 +1376,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DialectDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="75" selection-end="88" vertical-scroll-proportion="0.096921325" vertical-offset="0" max-vertical-offset="877">
+        <state line="5" column="30" selection-start="75" selection-end="88" vertical-scroll-proportion="0.14834206" vertical-offset="0" max-vertical-offset="573">
           <folding />
         </state>
       </provider>
@@ -1363,13 +1387,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,9 +1471,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/org.bigtrack.business/src/main/java/Database/DatabaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Domain/TableChange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+        <state line="16" column="13" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1472,7 +1496,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.bigtrack.cassandra/src/main/java/Database/CassandraDatabaseManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="31" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.41847205" vertical-offset="636" max-vertical-offset="1513">
+        <state line="74" column="42" selection-start="2263" selection-end="2282" vertical-scroll-proportion="0.22862129" vertical-offset="1127" max-vertical-offset="1700">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1020#1027#0" expanded="true" />

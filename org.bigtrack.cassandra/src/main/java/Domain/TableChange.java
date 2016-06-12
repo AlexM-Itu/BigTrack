@@ -12,7 +12,7 @@ import lombok.Data;
 /**
  * Created by Alex on 6/11/16.
  */
-@Table (keyspace = "todo", name="tableChanges")
+@Table (name="tableChanges")
 @Data
 public class TableChange {
     @PartitionKey

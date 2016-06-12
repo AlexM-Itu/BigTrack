@@ -12,7 +12,7 @@ import java.util.List;
 public interface DatabaseManager {
     public void setConnectionString(String connectionString);
     public List<Table> getDatabaseTables();
-    public List<String> getTableColumns(int tableId);
+    public List<String> getTableColumns(String tableId);
     public List<TableChange> findChangesets(int tableId, ChangesetSearchOptions searchOptions);
-    public TableChange getChangesetDetails (long changesetId);
+    public TableChange getChangesetDetails (String changesetId);
 }
