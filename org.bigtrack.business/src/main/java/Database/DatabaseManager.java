@@ -13,6 +13,6 @@ public interface DatabaseManager {
     public void setConnectionString(String connectionString);
     public List<Table> getDatabaseTables();
     public List<String> getTableColumns(String tableId);
-    public List<TableChange> findChangesets(int tableId, ChangesetSearchOptions searchOptions);
+    public List<TableChange> findChangesets(String tableId, ChangesetSearchOptions searchOptions);
     public TableChange getChangesetDetails (String changesetId);
 }

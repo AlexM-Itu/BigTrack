@@ -1,10 +1,11 @@
 package controllers;
 
-import configuration.ConfigurationManager;
-import database.ChangesetSearchOptions;
-import database.DatabaseManager;
-import domain.Table;
-import domain.TableChange;
+
+import Configuration.ConfigurationManager;
+import Database.ChangesetSearchOptions;
+import Database.DatabaseManager;
+import Domain.Table;
+import Domain.TableChange;
 import models.ChangesetDetailsResponse;
 import models.ChangesetListItemModel;
 import models.ChnagesetsRequest;
@@ -13,6 +14,7 @@ import models.DatabaseTableListItemModel;
 import javax.jws.WebMethod;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.xml.crypto.Data;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,7 +24,10 @@ import java.util.stream.Collectors;
 @Path("/database")
 public class DatabaseController {
 
-    private ConfigurationManager configurationManager = ConfigurationManager.getInstance();
+    private ConfigurationManager configurationManager;
+    public DatabaseController()throws Exception{
+        configurationManager = ConfigurationManager.getInstance();
+    }
 
     @Path("/{databaseId}/tables")
     @WebMethod(operationName = "GET")
@@ -48,7 +53,7 @@ public class DatabaseController {
 
     @Path("/{databaseId}/tables/{tableId}/columns")
     @WebMethod(operationName = "GET")
-    public List<String> GetTableColumns(@PathParam("databaseId") String databaseId, @PathParam("tableId") int tableId){
+    public List<String> GetTableColumns(@PathParam("databaseId") String databaseId, @PathParam("tableId") String tableId){
         DatabaseManager databaseManager = configurationManager.getDatabaseManagerByDatabaseId(databaseId);
         // todo error if not found
 
@@ -57,7 +62,7 @@ public class DatabaseController {
 
     @Path("/{databaseId}/tables/{tableId}/changesets")
     @WebMethod(operationName = "GET")
-    public List<ChangesetListItemModel> FindChangesets (@PathParam("databaseId") String databaseId, @PathParam("tableId") int tableId, ChnagesetsRequest changesetsRequest){
+    public List<ChangesetListItemModel> FindChangesets (@PathParam("databaseId") String databaseId, @PathParam("tableId") String tableId, ChnagesetsRequest changesetsRequest){
 
         DatabaseManager databaseManager = configurationManager.getDatabaseManagerByDatabaseId(databaseId);
         // todo error if not found
@@ -92,7 +97,7 @@ public class DatabaseController {
 
     @Path("/{databaseId}/tables/{tableId}/{changesetId}")
     @WebMethod(operationName = "GET")
-    public ChangesetDetailsResponse GetChangesetDetails (@PathParam("databaseId") String databaseId, @PathParam("tableId") int tableId, @PathParam("changesetId") int changesetId){
+    public ChangesetDetailsResponse GetChangesetDetails (@PathParam("databaseId") String databaseId, @PathParam("tableId") String tableId, @PathParam("changesetId") String changesetId){
 
         DatabaseManager databaseManager = configurationManager.getDatabaseManagerByDatabaseId(databaseId);
         // todo error if not found

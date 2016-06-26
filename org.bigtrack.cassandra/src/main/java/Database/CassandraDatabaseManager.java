@@ -74,14 +74,15 @@ public class CassandraDatabaseManager implements DatabaseManager {
 
     @Override
     public TableChange getChangesetDetails(String changesetId) {
-        try(Session session = cluster.connect()){
-            Mapper<CassandraTableChange> mapper = getMapper(session);
-            Result<CassandraTableChange> result = mapper.get(changesetId);
-            if (result.one() == null)
-                return null;
-
-            return MapCassandraTableChangeToBusinessTableChange(result.one());
-        }
+       return new TableChange();
+//        try(Session session = cluster.connect()){
+//            Mapper<CassandraTableChange> mapper = getMapper(session);
+//            Result<CassandraTableChange> result = mapper.get(changesetId);
+//            if (result.one() == null)
+//                return null;
+//
+//            return MapCassandraTableChangeToBusinessTableChange(result.one());
+//        }
     }
 
     private Mapper<CassandraTableChange> getMapper (Session session){
@@ -90,6 +91,7 @@ public class CassandraDatabaseManager implements DatabaseManager {
     }
 
     private TableChange MapCassandraTableChangeToBusinessTableChange (CassandraTableChange cassandraTableChange){
-        throw new Exception("not implemented");
+        //throw new Exception("not implemented");
+        return new TableChange();
     }
 }

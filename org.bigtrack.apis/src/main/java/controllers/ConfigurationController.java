@@ -16,7 +16,10 @@ import java.util.List;
 @Path("/configuration")
 public class ConfigurationController {
 
-    private ConfigurationManager configurationManager = ConfigurationManager.getInstance();
+    private ConfigurationManager configurationManager;
+    public ConfigurationController() throws Exception{
+        configurationManager = ConfigurationManager.getInstance();
+    }
 
     @Path("/")
     @WebMethod(operationName = "GET")
