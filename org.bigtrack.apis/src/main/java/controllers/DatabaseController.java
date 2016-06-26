@@ -1,10 +1,10 @@
 package controllers;
 
-import Configuration.ConfigurationManager;
-import Database.ChangesetSearchOptions;
-import Database.DatabaseManager;
-import Domain.Table;
-import Domain.TableChange;
+import configuration.ConfigurationManager;
+import database.ChangesetSearchOptions;
+import database.DatabaseManager;
+import domain.Table;
+import domain.TableChange;
 import models.ChangesetDetailsResponse;
 import models.ChangesetListItemModel;
 import models.ChnagesetsRequest;
