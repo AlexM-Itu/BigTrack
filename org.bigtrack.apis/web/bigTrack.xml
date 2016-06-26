@@ -6,19 +6,19 @@
             <id>myDb1</id>
             <name>My Db</name>
             <connectionString>aasdjshfjh</connectionString>
-            <dialectDriver>org.bigtrack.sqlserver.sqlDriver</dialectDriver>
+            <dialectDriverName>org.bigtrack.sqlserver.sqlDriver</dialectDriver>
         </database>
         <database>
             <id>myDb2</id>
             <name>My Db1</name>
             <connectionString>dsfgsdfgsd</connectionString>
-            <dialectDriver>org.bigtrack.mysql.mySqlDriver</dialectDriver>
+            <dialectDriverName>org.bigtrack.mysql.mySqlDriver</dialectDriver>
         </database>
         <database>
             <id>myDb3</id>
             <name>My Db3</name>
             <connectionString>dsfgsdfgsd</connectionString>
-            <dialectDriver>org.bigtrack.mongoDb.MongoDbDriver</dialectDriver>
+            <dialectDriverName>org.bigtrack.mongoDb.MongoDbDriver</dialectDriver>
         </database>
     </trackableDatabases>
 </bigTrackConfig>

@@ -15,5 +15,10 @@
             <version>1.16.8</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.9</version>
+        </dependency>
     </dependencies>
 </project>
