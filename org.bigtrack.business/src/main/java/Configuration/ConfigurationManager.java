@@ -1,6 +1,7 @@
 package Configuration;
 
 import Database.DatabaseManager;
+import Database.DialectDriver;
 import com.thoughtworks.xstream.XStream;
 import javafx.scene.text.TextBuilder;
 import lombok.Getter;
@@ -20,19 +21,21 @@ import java.util.List;
  * Created by Alex on 5/30/16.
  */
 public class ConfigurationManager {
-    private static ConfigurationManager ourInstance = new ConfigurationManager();
+    private static ConfigurationManager instance;
     private BigTrackConfiguration bigTrackConfiguration;
     private final String configurationFileName = "bigTrack.xml";
 
-    public static ConfigurationManager getInstance() {
-        return ourInstance;
+    public static ConfigurationManager getInstance() throws Exception{
+        if (instance == null)
+            instance = new ConfigurationManager();
+        return instance;
     }
 
-    private ConfigurationManager() {
+    private ConfigurationManager() throws Exception{
         XStream serializer = new XStream();
         bigTrackConfiguration = (BigTrackConfiguration) serializer.fromXML (new File(configurationFileName));
         for (DatabaseConfiguration configuration : bigTrackConfiguration.getDatabaseConfigurations()){
-            configuration.setDialectDriver(Class.forName(configuration.getDialectDriverName().newInstance()));
+            configuration.setDialectDriver((DialectDriver)Class.forName(configuration.getDialectDriverName()).newInstance());
         }
     }
 

@@ -14,10 +14,10 @@ import lombok.Data;
  */
 @Table (name="tableChanges")
 @Data
-public class TableChange {
+public class CassandraTableChange {
     @PartitionKey
     private UUID id;
-    private Set<ColumnChange> columnChanges;
+    private Set<CassandraColumnChange> columnChanges;
     private int dbUser;
     private Operations operation; // todo register codec
     private String tableName;

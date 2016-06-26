@@ -1,5 +1,6 @@
 package Database;
 
+import Domain.CassandraTableChange;
 import Domain.MapperConfiguration;
 import Domain.Table;
 import Domain.TableChange;
@@ -51,8 +52,8 @@ public class CassandraDatabaseManager implements DatabaseManager {
         try(Session session = cluster.connect()){
             ResultSet rows = session.execute("select  * from TableChanges where tableName = "+ tableId + "limit 1;");
 
-            Mapper<TableChange> mapper = getMapper(session);
-            Result<TableChange> latestChange = mapper.map(rows);
+            Mapper<CassandraTableChange> mapper = getMapper(session);
+            Result<CassandraTableChange> latestChange = mapper.map(rows);
 
             if (latestChange.one() == null)
                 return null;
@@ -74,8 +75,8 @@ public class CassandraDatabaseManager implements DatabaseManager {
     @Override
     public TableChange getChangesetDetails(String changesetId) {
         try(Session session = cluster.connect()){
-            Mapper<TableChange> mapper = getMapper(session);
-            Result<TableChange> result = mapper.get(changesetId);
+            Mapper<CassandraTableChange> mapper = getMapper(session);
+            Result<CassandraTableChange> result = mapper.get(changesetId);
             if (result.one() == null)
                 return null;
 
@@ -83,12 +84,12 @@ public class CassandraDatabaseManager implements DatabaseManager {
         }
     }
 
-    private Mapper<TableChange> getMapper (Session session){
-        Mapper<TableChange> tableChangeMapper = new MappingManager(session).mapper(TableChange.class);
+    private Mapper<CassandraTableChange> getMapper (Session session){
+        Mapper<CassandraTableChange> tableChangeMapper = new MappingManager(session).mapper(CassandraTableChange.class);
         return tableChangeMapper;
     }
 
-    private TableChange MapCassandraTableChangeToBusinessTableChange (TableChange cassandraTableChange){
+    private TableChange MapCassandraTableChangeToBusinessTableChange (CassandraTableChange cassandraTableChange){
         throw new Exception("not implemented");
     }
 }
