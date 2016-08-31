@@ -1,0 +1,54 @@
+select  *
+from "TableChanges"
+where "tableName" = 'a'
+	and timestamp >= 'b'
+	and timestamp <= 'c'
+	and dbUser = 2
+	and (column = 'd' or column = 'f')
+limit 1;
+
+
+
+insert into "TableNames" ("name")
+values ('Users');
+
+select *
+from "TableNames";
+
+
+SELECT "name" FROM "TableNames";
+
+
+insert into "TableColumns" ("id", "tableId", "columnName")
+values (uuid(), 'Users', 'Email');
+
+select *
+from "TableColumns"
+where "tableId" = 'Checkouts';
+
+
+select *
+from "TableChanges";
+where "columnChanges" contains {"columnName": 'hi', "oldValue": '1', "newValue": '2'};
+
+
+insert into "TableChanges" ("id", "columnChanges", "dbUser", "operation", "tableName", "timestamp")
+values(uuid(),
+	{{
+		"columnName": 'bla ',
+		"oldValue": '1',
+		"newValue": '2'
+	}, {
+		"columnName": 'foo',
+		"oldValue": '1',
+		"newValue": '2'
+	}}, 
+	123,
+	'insert',
+	'blah',
+	dateOf(now()));
+	
+	
+update "TableChanges"
+set "timestamp" = now();
+
