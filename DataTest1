@@ -1,0 +1,55 @@
+insert into "TableNames"("id", "name", "created") values (uuid(), 'GuiniaPig1', dateof(now()));
+insert into "TableNames"("id", "name", "created") values (uuid(), 'GuiniaPig2', dateof(now()));
+
+select "id" from "TableNames" where "name" = ?;
+insert into "TableNames" ("id", "name", "created") values(uuid(), ?, dateof(now()))
+
+insert into "ColumnNames" ("id", "columnname", "tableid", "created") values(uuid(), 'col1', '89b8cfbf-9dd1-457e-8c18-64bec6fd7b85', dateof(now()));
+insert into "ColumnNames" ("id", "columnname", "tableid", "created") values(uuid(), 'col2', '89b8cfbf-9dd1-457e-8c18-64bec6fd7b85', dateof(now()));
+insert into "ColumnNames" ("id", "columnname", "tableid", "created") values(uuid(), 'col3', '89b8cfbf-9dd1-457e-8c18-64bec6fd7b85', dateof(now()));
+insert into "ColumnNames" ("id", "columnname", "tableid", "created") values(uuid(), 'col4', '2a86cec2-1b45-4b1f-b0be-48053e86fe45', dateof(now()));
+insert into "ColumnNames" ("id", "columnname", "tableid", "created") values(uuid(), 'col5', '2a86cec2-1b45-4b1f-b0be-48053e86fe45', dateof(now()));
+insert into "ColumnNames" ("id", "columnname", "tableid", "created") values(uuid(), 'col6', '2a86cec2-1b45-4b1f-b0be-48053e86fe45', dateof(now()));
+
+select * from "ColumnNames";
+
+insert into "TableChanges"("id", "changeid", "changetimestamp", "columnid", "columnname", "dbuser", "operation", "priorvalue", "updatedvalue", "tableid", "tablename")
+values(uuid(), 'e159c26f-1f5a-4ab2-972c-faef12de015d', dateof(now()), '959d80e8-107a-424f-8bfd-3d55b5015b25', 'col6', 'alex', 1, 'oldVal2', 'newVal2', '2a86cec2-1b45-4b1f-b0be-48053e86fe45', 'GuiniaPig1');
+
+select *
+from "TableChanges";
+
+insert into "TableColumns" ("id", "columnname", "created", "tableid")
+values (uuid(), 'col4',dateof(now()) , '89b8cfbf-9dd1-457e-8c18-64bec6fd7b85');
+
+select "id" from "TableColumns" where "tableid" = ? and "columnname" = ?
+
+insert into "TableColumns"("id", "tableid", "columnname", "created") values(uuid(), ?, ?, dateof(now()))
+
+select "columnname" 
+from "TableColumns"
+where "tableid" = '89b8cfbf-9dd1-457e-8c18-64bec6fd7b85'
+allow filtering;
+
+
+SELECT "changeid"  
+FROM "TableChanges" 
+where "tableid" ='2a86cec2-1b45-4b1f-b0be-48053e86fe45' 
+	and "changetimestamp" <= '6/1/2016 7:00:00 AM' 
+	and "dbuser" = 'alex' 
+allow filtering;
+
+
+SELECT "changeid"  
+FROM "TableChanges" 
+where "tableid" ='2a86cec2-1b45-4b1f-b0be-48053e86fe45' 
+	and "changetimestamp" <= '2016/00/01' 
+	and "dbuser" = 'alex' 
+allow filtering;
+
+
+
+insert into "TableChanges"("id", "changeid", "changetimestamp", "columnid", "columnname", "dbuser", "operation", "priorvalue", "updatedvalue", "tableid", "tablename")
+values(uuid(), ? , ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+select "updatedvalue" from "TableChanges" where "tableid" = ? and "columnid" = ? limit 1;
