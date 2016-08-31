@@ -1,0 +1,41 @@
+CREATE TABLE "BigTrackSandbox"."TableNames" (
+	id uuid,
+	name varchar,
+	created timestamp,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "BigTrackSandbox"."TableColumns1" (
+	id uuid,
+	tableid varchar,
+	columnname varchar,
+	created timestamp,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE "BigTrackSandbox"."TableChanges" (
+	id uuid,
+	changeid varchar,
+	tableId varchar,
+	tablename varchar,
+	changetimestamp timestamp,
+	dbuser varchar,
+	columnid varchar,
+	columnname varchar,
+	priorvalue text,
+	updatedvalue text,
+	operation tinyint,
+	PRIMARY KEY (id)
+);
+
+drop table "BigTrackSandbox"."TableColumns";
+
+CREATE INDEX "TableChanges_chageid" ON "BigTrackSandbox"."TableChanges" (changeid);
+CREATE INDEX "TableChanges_dbuser" ON "BigTrackSandbox"."TableChanges" (dbuser);
+CREATE INDEX "TableChanges_changetimestamp" ON "BigTrackSandbox"."TableChanges" (changetimestamp);
+CREATE INDEX "TableChanges_columnid" ON "BigTrackSandbox"."TableChanges" (columnid);
+CREATE INDEX "TableChanges_priorvalue" ON "BigTrackSandbox"."TableChanges" (priorvalue);
+CREATE INDEX "TableChanges_updatedvalue" ON "BigTrackSandbox"."TableChanges" (updatedvalue);
+CREATE INDEX "TableChanges_tableid" ON "BigTrackSandbox"."TableChanges" (tableid);
+
+CREATE INDEX "TableColumns_tableid" ON "BigTrackSandbox"."TableColumns1"(tableid);
